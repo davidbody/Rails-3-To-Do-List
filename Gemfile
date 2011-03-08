@@ -32,6 +32,7 @@ gem 'sqlite3'
 gem "formtastic"
 gem "jquery-rails"
 gem "autotest", :group => [:development, :test]
+gem 'autotest-fsevent', :group => :test
 gem "autotest-growl", :group => [:development, :test]
 gem "capybara", :group => [:development, :test]
 gem "cucumber-rails", :group => [:development, :test]

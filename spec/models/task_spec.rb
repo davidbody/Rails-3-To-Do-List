@@ -1,5 +1,13 @@
 require 'spec_helper'
 
 describe Task do
-  pending "add some examples to (or delete) #{__FILE__}"
+  context "with valid parameters" do
+    before(:each) do
+      @task = Task.new(:name => 'Learn Ruby', :description => 'Read PickAxe')
+    end
+
+    it "should be valid" do
+      @task.should be_valid
+    end
+  end
 end
